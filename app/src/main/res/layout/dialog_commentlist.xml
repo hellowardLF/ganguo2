@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/alpha_gray"
+    android:id="@+id/comment_linearlayout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:textColor="@color/aliyun_colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/comment_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/comment_close"
+            android:padding="8dp"
+            android:src="@drawable/icon_close"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/comment_sw"
+        android:layout_weight="1"
+        android:layout_marginTop="0.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/white"
+            android:id="@+id/comment_list_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:layout_height="38dp">
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:textSize="13dp"
+            tools:text="54545"
+            android:hint="说点关心祝福的话吧"
+            android:id="@+id/comment_list_content"
+            android:background="@null"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_margin="2dp"
+            android:layout_width="0.5dp"
+            android:background="#f5f5f5"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/comment_list_submit"
+            android:gravity="center"
+            android:text="发送"
+            android:layout_width="40dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

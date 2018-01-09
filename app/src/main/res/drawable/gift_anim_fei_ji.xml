@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:duration="100"
+        android:drawable="@mipmap/feiji1_0"/>
+    <item
+        android:duration="100"
+        android:drawable="@mipmap/feiji1_1"/>
+    <item
+        android:duration="200"
+        android:drawable="@mipmap/feiji1_2"/>
+    <item
+        android:duration="200"
+        android:drawable="@mipmap/feiji2_0"/>
+    <item
+        android:duration="200"
+        android:drawable="@mipmap/feiji2"/>
+    <item
+        android:duration="200"
+        android:drawable="@mipmap/feiji2_1"/>
+    <item
+        android:duration="200"
+        android:drawable="@mipmap/feiji2_2"/>
+    <item
+        android:duration="200"
+        android:drawable="@mipmap/feiji2_3"/>
+    <item
+        android:duration="200"
+        android:drawable="@mipmap/feiji3"/>
+    <item
+        android:duration="500"
+        android:drawable="@mipmap/feiji4"/>
+    <item
+        android:duration="500"
+        android:drawable="@mipmap/feiji5"/>
+
+</animation-list>

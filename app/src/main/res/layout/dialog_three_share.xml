@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:id="@+id/image_add_live_share_linearlayout"
+    android:layout_height="150dp">
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:id="@+id/image_add_live_share_wechat_moment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_wechat_moment"/>
+
+    <ImageView
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:id="@+id/image_add_live_share_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/wechat_logo"/>
+
+    <ImageView
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:id="@+id/image_add_live_share_weibo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/weibo_logo"/>
+
+    <ImageView
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:id="@+id/image_add_live_share_qq"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/qq_logo"/>
+
+    <ImageView
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:id="@+id/image_add_live_share_qzone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_qzone"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/image_add_live_share_back"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <View
+            android:background="#f5f5f5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

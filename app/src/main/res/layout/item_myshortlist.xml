@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="250dp">
+    <ImageView
+        android:src="@drawable/lcim_chat_record_button_round_background"
+        android:id="@+id/myshortvideo_item_img"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="match_parent" />
+   <LinearLayout
+       android:layout_marginBottom="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_alignParentBottom="true"
+       android:orientation="vertical"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <TextView
+           android:textColor="@color/white"
+           android:layout_marginBottom="3dp"
+           tools:text="5656565"
+           android:id="@+id/myshortvideo_item_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:textColor="@color/white"
+           android:layout_marginBottom="3dp"
+           tools:text="5545454"
+           android:id="@+id/myshortvideo_item_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:textColor="@color/white"
+           tools:text="554545"
+           android:id="@+id/myshortvideo_item_time"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/icon_look"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/myshortvideo_item_looknumber"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            tools:text="11515"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+</RelativeLayout>

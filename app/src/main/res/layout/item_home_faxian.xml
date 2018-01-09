@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/faxian_leixin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类型"
+        android:textColor="#646464"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/faxian_jieshao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faxian_leixin"
+        android:layout_marginTop="5dp"
+        android:text="类型介绍"
+        android:textColor="#909090" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/middle_butto_forward_normal" />
+
+    <LinearLayout
+        android:layout_below="@+id/faxian_jieshao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:scaleType="fitXY"
+                android:id="@+id/faxian_img1"
+                android:src="@drawable/bg_login"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp" />
+            <TextView
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:background="@drawable/btn_shape_10radius"
+                android:text="气质"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginTop="130dp"
+                android:layout_alignParentRight="true"
+                android:text="12364645"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/faxian_number" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="#646464"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_below="@+id/faxian_img1"
+                android:id="@+id/faxian_name"
+                android:text="名字"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/faxian_name"
+                android:layout_below="@+id/faxian_img1"
+                android:id="@+id/faxian_gender"
+                android:src="@drawable/icon_dingwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/faxian_gender"
+                android:layout_below="@+id/faxian_img1"
+                android:id="@+id/faxian_grade"
+                android:src="@drawable/icon_dingwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:scaleType="fitXY"
+                android:id="@+id/faxian_img2"
+                android:src="@drawable/bg_login"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp" />
+            <TextView
+                android:textColor="@color/white"
+                android:padding="5dp"
+                android:background="@drawable/btn_shape_10radius"
+                android:text="气质"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/white"
+                android:layout_marginTop="130dp"
+                android:layout_alignParentRight="true"
+                android:text="12364645"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/faxian_number" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textColor="#646464"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_below="@+id/faxian_img2"
+                android:id="@+id/faxian_name1"
+                android:text="名字"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/faxian_name1"
+                android:layout_below="@+id/faxian_img2"
+                android:id="@+id/faxian_gender1"
+                android:src="@drawable/icon_dingwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/faxian_gender1"
+                android:layout_below="@+id/faxian_img2"
+                android:id="@+id/faxian_grade1"
+                android:src="@drawable/icon_dingwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

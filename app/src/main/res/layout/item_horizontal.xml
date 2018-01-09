@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:orientation="vertical" android:layout_width="250dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/horizontal_Image"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/zhibo_camr_s"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/horizontal_yuyue"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="这是标题"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontal_title"
+        android:layout_toRightOf="@+id/horizontal_Image"/>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/horizontal_title"
+        android:text="这是时间"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontal_content"
+        android:layout_toRightOf="@+id/horizontal_Image"/>
+    <TextView
+        android:id="@+id/horizontal_yuyue"
+        android:background="@drawable/btn_topic_selector"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="预约"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

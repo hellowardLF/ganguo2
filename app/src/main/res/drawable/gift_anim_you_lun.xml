@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item
+        android:drawable="@mipmap/yl1"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl2"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl4"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl9"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl11"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl13"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl16"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl18"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl20"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl25"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl27"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl30"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl32"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl34"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl37"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl41"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl44"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl46"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl48"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl51"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl53"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl57"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl58"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl60"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl62"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl65"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl67"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl72"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl74"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl76"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl79"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl81"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl83"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl88"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl90"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl93"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl95"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl97"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl100"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl104"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl107"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl109"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl111"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl114"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl116"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl125"
+        android:duration="@integer/duration_anim" />
+    <item
+        android:drawable="@mipmap/yl127"
+        android:duration="@integer/duration_anim" />
+</animation-list>

@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+bugly {
+    appId = '74dad6efbf'
+    appKey = '5949185b-c48b-484b-a042-35383015ebef'
+}
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "tv.ganguo.live"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 2
+        versionName "1.0.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+        aaptOptions.cruncherEnabled = false
+        aaptOptions.useNewCruncher = false
+    }
+    signingConfigs {
+        debug {
+            storeFile file('E:/work/ganguotest.jks')
+            keyAlias 'ganguo'
+            keyPassword 'ganguo1234'
+            storePassword 'ganguo1234'
+        }
+        release {
+            storeFile file('E:/work/ganguotest.jks')
+            keyAlias 'ganguo'
+            keyPassword 'ganguo1234'
+            storePassword 'ganguo1234'
+        }
+    }
+
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            //加载默认混淆配置文件
+            //proguardFiles getDefaultProguardFile('proguard-Android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+        }
+        release {
+            debuggable true
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            //加载默认混淆配置文件
+            //proguardFiles getDefaultProguardFile('proguard-Android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets.main {
+        jni.srcDirs = []
+        jniLibs.srcDir "libs"
+    }
+}
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
+
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '24.2.1'
+            }
+        }
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    /*  compile 'cn.leancloud.android:avoscloud-sdk:v3.13.+'
+                               compile('cn.leancloud.android:avoscloud-push:v3.13.+@aar') { transitive = true }*/
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.smart.androidutils:androidutils:1.0.3'
+    //    compile 'com.smart.androidui:androidui:1.0.4.5'
+    compile 'com.smart.androidui:androidui:1.1.2'
+    //    compile project(':androidui')
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    //compile 'com.qiniu:happy-dns:0.2.5'
+    compile 'com.github.stuxuhai:jpinyin:1.0'
+    //compile project(':ijkwidget')
+    //compile project (':thirdpay')
+    compile files('libs/httpcore-4.2.4.jar')
+    compile files('libs/httpclient-4.2.5.jar')
+    compile files('libs/alipaySdk-20160825.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.isseiaoki:simplecropview:1.1.4'
+    //    compile files('libs/umeng-analyticsanalytics-v6.1.0.jar')
+    compile project(':citypicker')
+    compile project(':androidHorizontalListView')
+    compile project(':loginsharesdk')
+    compile project(':leancloudchatkit')
+    //    compile(name: 'QuSdk-RC', ext: 'aar')
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'pub.devrel:easypermissions:0.2.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile 'com.squareup.okio:okio:1.12.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile project(':QuSdk-RC')
+}

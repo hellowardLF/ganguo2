@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_top"/>
+    <LinearLayout
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/qiangdang_diwei"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/icon_dingwei"
+            android:padding="5dp"
+            android:background="@drawable/bg_f5f5f5_shape"
+            android:text="定位"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#f5f5f5"
+            android:layout_margin="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+      <!--  <TextView
+            android:id="@+id/qiangdang_shenfen"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/icon_dingwei"
+            android:padding="5dp"
+            android:background="@drawable/bg_f5f5f5_shape"
+            android:drawableRight="@drawable/icon_dingwei"
+            android:text="省份"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+        <Spinner
+            android:layout_weight="1"
+            android:id="@+id/qiangdang_shenfen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <View
+            android:background="#f5f5f5"
+            android:layout_margin="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <Spinner
+            android:id="@+id/qiangdang_city"
+            android:layout_weight="1"
+            android:text="城市"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="#f5f5f5"
+            android:layout_margin="10dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/qiangdang_select"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:background="@drawable/bg_f5f5f5_shape"
+            android:text="搜索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <GridView
+        android:layout_marginTop="10dp"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:id="@+id/qiandan_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        />
+ <!--   <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/qiangdang_xiao"
+            android:background="@color/qiangdanlinbg"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="15sp"
+                android:text="小额网贷"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="11sp"
+                android:text="500-5000(及时放款)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"/>
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/qiangdang_zhong"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="15sp"
+                android:text="本地小贷"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="11sp"
+                android:text="1万-20万(3-5天放款)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5"/>
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/qiangdang_da"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:textSize="15sp"
+                android:text="本地应急"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textSize="11sp"
+                android:text="20万-200万(当天放款)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>-->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/qiangdang_swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/qiangdang_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
